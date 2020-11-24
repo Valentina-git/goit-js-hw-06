@@ -1,3 +1,6 @@
+import users from './users.js'
+console.log(users);
+
 /**
  * Задание 1
 Получить массив имен 
@@ -8,6 +11,6 @@ const getUserNames = users => {
 };
 
 console.log(getUserNames(users));
-// [ 'Moore Hensley', 'Sharlene Bush', 'Ross Vazquez', 'Elma Head', 'Carey Barr', 'Blackburn Dotson', 'Sheree Anthony' ]
+//['Moore Hensley','Sharlene Bush','Ross Vazquez','Elma Head','Carey Barr','Blackburn Dotson','Sheree Anthony']
  
 //filter, map
