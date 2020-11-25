@@ -8,12 +8,8 @@ import users from './users.js'
 
 
 const getUsersWithFriend = (users, friendName) => {
-  const arr = users.map(({ name, friends }) => ({ name, friends }))
-  console.log(arr);
-  
-  //.filter(({ friends }) =>  friendName ==);
-
-  //.forEach(({ name, friends }) => console.log(({ name, friends }));)
+  return users.filter(({ friends }) => friends.includes(friendName))
+  .map(elem => elem.name)
 }
 
 console.log(getUsersWithFriend(users, 'Briana Decker'));
