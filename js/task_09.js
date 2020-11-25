@@ -8,11 +8,11 @@ import users from './users.js'
 
 
 const getNamesSortedByFriendsCount = users => {
-  return [...users]
-  .sort(({friends: friends_1},{friends: friends_2}) => 
-  {return friends_1.length-friends_2.length})
-  .map(({name}) => name)
+  return users.sort((user_1, user_2) => 
+  user_1.friends.length - user_2.friends.length)
+  .map(user => user.name )
 }
+
 
 console.log(getNamesSortedByFriendsCount(users));
 // [ 'Moore Hensley', 'Sharlene Bush', 'Elma Head', 
